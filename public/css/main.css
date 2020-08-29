@@ -99,3 +99,55 @@ a{
     color: #666666;
     font-size: 30px;
 }
+
+.footer-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20px;
+}
+
+.look-img{
+    width: 10vw;
+}
+
+.diagram{
+    width: 30vw;
+}
+
+.quienes-main{
+    color: #666666;
+    text-align: center;
+}
+
+.servicios-main{
+    color: #666666;
+    text-align: center;
+}
+
+
+.button-contacto{
+    background: #252525;
+    color: white;
+    width: 23vw;
+    height: 6vw;
+    border: transparent;
+    font-size: 200%;
+    font-weight: bold;
+    transition: 0.6s;
+
+
+}
+
+.button-contacto:hover{
+    background: #706f6f;
+    width: 24vw;
+    font-size: 210%;
+    transition: 0.6s;
+
+}
+
+.folleto-servicios{
+    width: 100%;
+}

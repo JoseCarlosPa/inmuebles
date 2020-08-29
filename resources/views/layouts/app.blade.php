@@ -26,7 +26,7 @@
 <div id="app">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="{{asset('images/logo.png')}}" alt="logo insignia" class="img-logo"> </a>
+        <a class="navbar-brand" href="/"><img src="{{asset('images/logo.png')}}" alt="logo insignia" class="img-logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,13 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto" >
                 <li class="nav-item">
-                    <a class="nav-link in" href="#">INICIO</a>
+                    <a class="nav-link in" href="/">INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="#">QUIÉNES SOMOS</a>
+                    <a class="nav-link in" href="/quienes-somos">QUIÉNES SOMOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="#">SERVICIOS</a>
+                    <a class="nav-link in" href="/servicios">SERVICIOS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link in" href="#">BOLSA DE TRABAJO</a>
@@ -64,9 +64,16 @@
                 <div class ="col-sm-3">
                     Copyright y todo lo de derechos
                 </div>
-                <div class ="col-sm-9">
-                    ICONO
+                <div class ="col-sm-6"></div>
+                <div class ="col-sm-3">
+                    <div class ="row text-center">
+                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/facebook.png')}}" alt="facebook" class="footer-logos"></a> </div>
+                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/twitter.png')}}" alt="facebook" class="footer-logos"> </a></div>
+                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/linkedin.png')}}" alt="facebook" class="footer-logos"> </a></div>
+                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/instagram.png')}}" alt="facebook" class="footer-logos"> </a></div>
+                    </div>
                 </div>
+                <br><br><br>
             </div>
         </div>
     </footer>
