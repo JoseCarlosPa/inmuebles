@@ -60,7 +60,7 @@ class InmbuebleController extends Controller
      * @param  \App\inmbueble  $inmbueble
      * @return \Illuminate\Http\Response
      */
-    public function show(inmbueble $inmbueble)
+    public function show(Inmueble $inmbueble)
     {
         //
     }
@@ -71,9 +71,13 @@ class InmbuebleController extends Controller
      * @param  \App\inmbueble  $inmbueble
      * @return \Illuminate\Http\Response
      */
-    public function edit(inmbueble $inmbueble)
+    public function edit(Inmueble $inmbueble, $id)
     {
-        //
+        $in = Inmueble::find($id);
+        $propiedades = Propiedad::get();
+        $ubicaciones = Ubicacion::get();
+        return view('Inmuebles.edit',['inmueble'=>$in,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+
     }
 
     /**
@@ -83,9 +87,34 @@ class InmbuebleController extends Controller
      * @param  \App\inmbueble  $inmbueble
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, inmbueble $inmbueble)
+    public function update(Request $request, Inmueble $inmbueble,$id)
     {
-        //
+        $editIn = Inmueble::find($id);
+        $editIn->nombre = $request->nombre;
+        $editIn->venta_renta = $request->venta_renta;
+        $editIn->id_propiedad = $request->propiedad;
+        $editIn->id_ubicacion = $request->ubicacion;
+        $editIn->extracto = $request->extracto;
+
+        if(($request->img)== null){
+            $editIn->img = $request->img_aux;
+        }else{
+            $request->file('img')->store('public');
+            $editIn->img = $request->file('img')->store('');
+        }
+
+        if(($request->pdf)==null){
+            $editIn->pdf = $request->pdf_aux;
+        }else{
+            $request->file('pdf')->store('public');
+            $editIn->pdf = $request->file('pdf')->store('');
+        }
+
+        $editIn->save();
+
+        return redirect('/inmuebles')->with('status','El inmueble fue actualizado con exito');
+
+
     }
 
     /**
@@ -94,7 +123,7 @@ class InmbuebleController extends Controller
      * @param  \App\inmbueble  $inmbueble
      * @return \Illuminate\Http\Response
      */
-    public function destroy(inmbueble $inmbueble)
+    public function destroy(Inmueble $inmbueble)
     {
         //
     }
@@ -110,9 +139,10 @@ class InmbuebleController extends Controller
     public function filtro(Request $request){
 
         $filtro = Inmueble::filtro($request->venta_renta,$request->tipo,$request->ubicacion);
+        $propiedades = Propiedad::get();
 
-
-        return view('inmuebles.show',['resultados'=>$filtro]);
+        $ubicaciones = Ubicacion::get();
+        return view('inmuebles.show',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
     }
 
 
