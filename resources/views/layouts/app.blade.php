@@ -60,12 +60,12 @@
     <footer>
         <div class ="container">
             <hr>
-            <div class ="row">
-                <div class ="col-sm-3">
+            <div class ="row text-center">
+                <div class ="col-md-3 col-sm-12">
                     Copyright y todo lo de derechos
                 </div>
-                <div class ="col-sm-6"></div>
-                <div class ="col-sm-3">
+                <div class ="col-sm-12 col-md-6"></div>
+                <div class ="col-sm-12 col-md-3">
                     <div class ="row text-center">
                         <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/facebook.png')}}" alt="facebook" class="footer-logos"></a> </div>
                         <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/twitter.png')}}" alt="facebook" class="footer-logos"> </a></div>
