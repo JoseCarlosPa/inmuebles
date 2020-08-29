@@ -43,10 +43,10 @@
                     <a class="nav-link in" href="/servicios">SERVICIOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="#">BOLSA DE TRABAJO</a>
+                    <a class="nav-link in" href="/bolsa-de-trabajo">BOLSA DE TRABAJO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="#">CONTACTO</a>
+                    <a class="nav-link in" href="/contacto">CONTACTO</a>
                 </li>
             </ul>
         </div>

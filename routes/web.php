@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','WelcomeController@welcome');
 
 Route::get('/quienes-somos', function () {
     return view('somos');
@@ -23,6 +21,12 @@ Route::get('/quienes-somos', function () {
 
 Route::get('/servicios', function () {
     return view('servicios');
+});
+Route::get('/contacto', function () {
+    return view('contacto');
+});
+Route::get('/bolsa-de-trabajo', function () {
+    return view('bolsa');
 });
 
 Auth::routes();

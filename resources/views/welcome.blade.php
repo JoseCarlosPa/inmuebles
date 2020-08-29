@@ -7,18 +7,27 @@
     <div class="container-fluid">
         <div class="row botones-buscar">
             <div class="col-sm-3 borders">
-                <select>
-                    <option>Venta/Renta</option>
+                <select name="venta-renta">
+                    <option value="N/A" selected>Venta/Renta</option>
+                    <option value="venta" >Venta</option>
+                    <option value="renta" >Renta</option>
                 </select>
             </div>
             <div class="col-sm-3 borders">
-                <select>
-                    <option>Tipo de Propiedad</option>
+                <select name="tipo">
+                    <option value="N/A" selected>Tipo de Propiedad</option>
+                    @foreach($propiedades as $propiedad)
+                        <option value="{{$propiedad->name}}">{{$propiedad->name}}</option>
+                    @endforeach
+
                 </select>
             </div>
             <div class="col-sm-3 borders">
-                <select>
-                    <option>Ubicacion</option>
+                <select name="ubicacion">
+                    <option value="N/A" selected>Ubicacion</option>
+                    @foreach($ubicaciones as $ubicacion)
+                        <option value="{{$ubicacion->name}}">{{$ubicacion->name}}</option>
+                    @endforeach
                 </select>
             </div>
 

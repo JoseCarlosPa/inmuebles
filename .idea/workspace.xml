@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b257192b-f87a-4433-aa21-a96bbcb4c849" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/bolsa.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin_app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,13 +151,13 @@
     <property name="settings.editor.selected.configurable" value="settings.xslt" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/images/fondos" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/fondos" />
       <recent name="$PROJECT_DIR$/public/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/fondos" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,7 +180,9 @@
       <workItem from="1598571893105" duration="3710000" />
       <workItem from="1598629951507" duration="5080000" />
       <workItem from="1598653305654" duration="9000" />
-      <workItem from="1598665098524" duration="2832000" />
+      <workItem from="1598665098524" duration="2960000" />
+      <workItem from="1598670328771" duration="2347000" />
+      <workItem from="1598706209154" duration="1815000" />
     </task>
     <servers />
   </component>
@@ -182,10 +190,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2051" y="96" key="NewPhpFileDialog" timestamp="1598666525157">
+    <state x="2051" y="96" key="NewPhpFileDialog" timestamp="1598671055386">
       <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
-    <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598666525157" />
+    <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598671055386" />
     <state x="1905" y="52" key="run.anything.popup" timestamp="1598665550714">
       <screen x="1280" y="-355" width="1920" height="1057" />
     </state>
