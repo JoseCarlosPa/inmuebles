@@ -49,7 +49,7 @@
             @foreach($resultados as $resultado)
                 <div class="col-sm-4">
                     <div class="card" style="width: 100%;margin-top:10%; height: 30vw">
-                        <img class="card-img-top" src="{{'/storage/'.$resultado->img}}" alt="Card image cap">
+                        <img class="card-img-top" src="{{asset('uploads/'.$resultado->img)}}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{$resultado->nombre}}</h5>
                             <p class="card-text">{{$resultado->extracto}}</p>

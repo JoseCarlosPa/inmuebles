@@ -42,7 +42,7 @@
                     </div>
                     @if(($inmueble->img)!=null)
                         <h4>Imagen de portada actual:</h4>
-                        <img src="{{'/storage/'.$inmueble->img}}" alt="img" width="300vw">
+                        <img src="{{asset('uploads/'.$inmueble->img)}}" alt="img" width="300vw">
                     @endif
 
                     <div class="form-group" style="margin-top: 5%">
@@ -52,7 +52,7 @@
 
                     @if(($inmueble->pdf)!=null)
                         <h4>PDF actual:</h4>
-                        <a href="{{'/storage/'.$inmueble->pdf}}" target="_blank">PDF Actual </a>
+                        <a href="{{asset('uploads/'.$inmueble->pdf)}}" target="_blank">PDF Actual </a>
                     @endif
                     <div class="form-group" style="margin-top: 5%">
                         <label for="pdf">PDF</label>

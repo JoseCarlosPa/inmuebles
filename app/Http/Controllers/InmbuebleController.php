@@ -100,14 +100,19 @@ class InmbuebleController extends Controller
         if(($request->img)== null){
             $editIn->img = $request->img_aux;
         }else{
-            $request->file('img')->store('public');
+            $file = $request->file('img');
+            \Storage::disk('local')->put($request->img,\File::get($file));
+
+            //$request->file('img')->store('public');
             $editIn->img = $request->file('img')->store('');
         }
 
         if(($request->pdf)==null){
             $editIn->pdf = $request->pdf_aux;
         }else{
-            $request->file('pdf')->store('public');
+            $file = $request->file('pdf');
+            \Storage::disk('local')->put($request->img,\File::get($file));
+
             $editIn->pdf = $request->file('pdf')->store('');
         }
 

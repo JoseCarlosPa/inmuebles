@@ -7,8 +7,8 @@
     <div class="container-fluid">
         <form action="/filtro" method="post">
             @csrf
-            <div class="row botones-buscar">
-                <div class="col-sm-3 borders">
+            <div class="row botones-buscar ">
+                <div class="col-sm-3 borders ">
                     <select name="venta_renta">
                         <option value="N/A" selected>Venta/Renta</option>
                         <option value="venta" >Venta</option>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\ubicacion;
+use App\Ubicacion;
 use Illuminate\Http\Request;
 
 class UbicacionController extends Controller

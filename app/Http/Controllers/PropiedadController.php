@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\propiedad;
+use App\Propiedad;
 use Illuminate\Http\Request;
 
 class PropiedadController extends Controller
