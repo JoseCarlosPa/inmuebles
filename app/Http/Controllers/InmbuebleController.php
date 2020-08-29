@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\inmbueble;
+use App\Inmueble;
 use Illuminate\Http\Request;
 
 class InmbuebleController extends Controller
@@ -14,7 +15,9 @@ class InmbuebleController extends Controller
      */
     public function index()
     {
-        //
+
+        $Inmbuelbes = Inmueble::get();
+        return view('Inmuebles.index',['inmuebles'=>$Inmbuelbes]);
     }
 
     /**

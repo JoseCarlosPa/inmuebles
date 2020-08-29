@@ -14,7 +14,8 @@ class PropiedadController extends Controller
      */
     public function index()
     {
-        //
+        $propiedades = Propiedad::get();
+        return view('Propiedades.index',['propiedades'=>$propiedades]);
     }
 
     /**
@@ -35,7 +36,12 @@ class PropiedadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newType = new Propiedad;
+        $newType->name = $request->name;
+        $newType->save();
+
+        return redirect('/propiedades')->with('status','La propiedad fue agregada con exito');
+
     }
 
     /**
@@ -55,9 +61,11 @@ class PropiedadController extends Controller
      * @param  \App\propiedad  $propiedad
      * @return \Illuminate\Http\Response
      */
-    public function edit(propiedad $propiedad)
+    public function edit(propiedad $propiedad,$id)
     {
-        //
+        $propiedad = Propiedad::find($id);
+
+        return view('propiedades.edit',['propiedad'=>$propiedad]);
     }
 
     /**
@@ -67,9 +75,13 @@ class PropiedadController extends Controller
      * @param  \App\propiedad  $propiedad
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, propiedad $propiedad)
+    public function update(Request $request, propiedad $propiedad,$id)
     {
-        //
+        $newType = Propiedad::find($id);
+        $newType->name = $request->name;
+        $newType->save();
+
+        return redirect('/propiedades')->with('status','La propiedad fue agregada con exito');
     }
 
     /**
@@ -81,5 +93,12 @@ class PropiedadController extends Controller
     public function destroy(propiedad $propiedad)
     {
         //
+    }
+
+    public function delete($id){
+
+        $del = Propiedad::find($id);
+        $del->delete();
+        return redirect('/propiedades')->with('status','La propiedad fue borrada con exito');
     }
 }

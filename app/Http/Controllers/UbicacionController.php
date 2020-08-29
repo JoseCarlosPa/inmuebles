@@ -14,7 +14,8 @@ class UbicacionController extends Controller
      */
     public function index()
     {
-        //
+        $Ubicaciones = Ubicacion::get();
+        return view('Ubicaciones.index',['Ubicaciones'=>$Ubicaciones]);
     }
 
     /**
@@ -24,7 +25,7 @@ class UbicacionController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -35,7 +36,10 @@ class UbicacionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newUbi = new Ubicacion;
+        $newUbi->name = $request->name;
+        $newUbi->save();
+        return redirect('/ubicaciones')->with('status','La ubicaciones fue agregada con exito');
     }
 
     /**
@@ -55,9 +59,10 @@ class UbicacionController extends Controller
      * @param  \App\ubicacion  $ubicacion
      * @return \Illuminate\Http\Response
      */
-    public function edit(ubicacion $ubicacion)
+    public function edit(ubicacion $ubicacion,$id)
     {
-        //
+        $ubicacion = Ubicacion::find($id);
+        return view('ubicaciones.edit',['ubicacion'=>$ubicacion]);
     }
 
     /**
@@ -67,9 +72,12 @@ class UbicacionController extends Controller
      * @param  \App\ubicacion  $ubicacion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ubicacion $ubicacion)
+    public function update(Request $request, ubicacion $ubicacion,$id)
     {
-        //
+        $editU = Ubicacion::find($id);
+        $editU->name = $request->name;
+        $editU->save();
+        return redirect('/ubicaciones')->with('status','La ubicaciones fue editada con exito');
     }
 
     /**
@@ -80,6 +88,12 @@ class UbicacionController extends Controller
      */
     public function destroy(ubicacion $ubicacion)
     {
-        //
+
+    }
+    public function delete($id){
+
+        $del = Ubicacion::find($id);
+        $del->delete();
+        return redirect('/ubicaciones')->with('status','La ubicaciones fue borrada con exito');
     }
 }

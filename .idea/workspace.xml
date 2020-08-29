@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b257192b-f87a-4433-aa21-a96bbcb4c849" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/bolsa.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin_app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Propiedades/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Propiedades/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Ubicaciones/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Ubicaciones/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PropiedadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PropiedadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UbicacionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UbicacionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin_app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin_app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -137,7 +146,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ghfkRIJYLwwMR6mDZAG26HPT5g" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -145,19 +156,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Ubicaciones" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.xslt" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/Ubicaciones" />
+      <recent name="$PROJECT_DIR$/resources/views/Propiedades" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/fondos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/fondos" />
       <recent name="$PROJECT_DIR$/public/images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/public/images/fondos" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,6 +196,7 @@
       <workItem from="1598665098524" duration="2960000" />
       <workItem from="1598670328771" duration="2347000" />
       <workItem from="1598706209154" duration="1815000" />
+      <workItem from="1598708053495" duration="9803000" />
     </task>
     <servers />
   </component>
@@ -190,13 +204,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2051" y="96" key="NewPhpFileDialog" timestamp="1598671055386">
+    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598716278764">
       <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
-    <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598671055386" />
-    <state x="1905" y="52" key="run.anything.popup" timestamp="1598665550714">
-      <screen x="1280" y="-355" width="1920" height="1057" />
+    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598716278764" />
+    <state x="2051" y="96" key="NewPhpFileDialog" timestamp="1598718824707">
+      <screen x="1280" y="-378" width="1920" height="1080" />
+    </state>
+    <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598718824707" />
+    <state x="1905" y="38" key="run.anything.popup" timestamp="1598715922767">
+      <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
     <state x="1905" y="52" key="run.anything.popup/1280.-355.1920.1057/0.23.1280.777@1280.-355.1920.1057" timestamp="1598665550714" />
+    <state x="1905" y="38" key="run.anything.popup/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598715922767" />
   </component>
 </project>

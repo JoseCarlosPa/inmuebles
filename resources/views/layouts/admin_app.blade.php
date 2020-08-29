@@ -13,6 +13,9 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/admin.js') }}" defer></script>
+
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -20,15 +23,53 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+
 </head>
 <body>
 <div id="app">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="{{route('inmbuelbes.index')}}">Inmbuebles</a>
+        <a href="{{route('ubicaciones.index')}}">Ubicaciones</a>
+        <a href="{{route('propiedades.index')}}">Tipos de Propiedad</a>
+        <a data-toggle="modal" data-target="#exampleModal" href="#">Salir</a>
+    </div>
 
-    <main>
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"><button class="btn-dark">Abrir</button></span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <main id="main">
         @yield('content')
     </main>
 
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{route('logout')}}" method="post">
+                @csrf
+                <div class="modal-body">
+                    De verdad quieres cerrar tu sesion?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="submit" class="btn btn-primary">Si</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
