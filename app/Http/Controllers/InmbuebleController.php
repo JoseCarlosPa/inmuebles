@@ -60,9 +60,10 @@ class InmbuebleController extends Controller
      * @param  \App\inmbueble  $inmbueble
      * @return \Illuminate\Http\Response
      */
-    public function show(Inmueble $inmbueble)
+    public function show(Inmueble $inmbueble,$id)
     {
-        //
+        $inm = Inmueble::find($id);
+        return view('Inmuebles.ver',['datos'=>$inm]);
     }
 
     /**
@@ -144,6 +145,8 @@ class InmbuebleController extends Controller
         $ubicaciones = Ubicacion::get();
         return view('inmuebles.show',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
     }
+
+
 
 
 }

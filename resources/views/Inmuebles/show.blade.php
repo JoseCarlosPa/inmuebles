@@ -48,7 +48,7 @@
         <div class="row">
             @foreach($resultados as $resultado)
                 <div class="col-sm-4">
-                    <div class="card" style="width: 100%;margin-top:10%; height: 35vw">
+                    <div class="card" style="width: 100%;margin-top:10%; height: 30vw">
                         <img class="card-img-top" src="{{'/storage/'.$resultado->img}}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{$resultado->nombre}}</h5>
@@ -58,7 +58,7 @@
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col-sm-12 text-right ">
-                                    <a href="#" class="btn btn-primary">ver más</a>
+                                    <a href="{{route('inmuebles.show',$resultado->id)}}" class="btn btn-primary">ver más</a>
                                 </div>
                             </div>
                         </div>

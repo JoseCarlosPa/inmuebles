@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b257192b-f87a-4433-aa21-a96bbcb4c849" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Inmuebles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Inmuebles/ver.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/Inmuebles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Inmuebles/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +184,7 @@
       <workItem from="1598665098524" duration="2960000" />
       <workItem from="1598670328771" duration="2347000" />
       <workItem from="1598706209154" duration="1815000" />
-      <workItem from="1598708053495" duration="17114000" />
+      <workItem from="1598708053495" duration="18113000" />
     </task>
     <servers />
   </component>
@@ -197,10 +196,10 @@
       <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
     <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598716278764" />
-    <state x="514" y="351" key="NewPhpFileDialog" timestamp="1598727209261">
+    <state x="514" y="351" key="NewPhpFileDialog" timestamp="1598730928780">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="514" y="351" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1598727209261" />
+    <state x="514" y="351" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1598730928780" />
     <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598724334094" />
     <state x="1905" y="38" key="run.anything.popup" timestamp="1598715922767">
       <screen x="1280" y="-378" width="1920" height="1080" />
