@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\inmbueble;
 use App\Inmueble;
+use App\Propiedad;
+use App\Ubicacion;
 use Illuminate\Http\Request;
 
 class InmbuebleController extends Controller
@@ -17,7 +18,9 @@ class InmbuebleController extends Controller
     {
 
         $Inmbuelbes = Inmueble::get();
-        return view('Inmuebles.index',['inmuebles'=>$Inmbuelbes]);
+        $ubicaciones = Ubicacion::get();
+        $tipos = Propiedad::get();
+        return view('Inmuebles.index',['inmuebles'=>$Inmbuelbes,'ubicaciones'=>$ubicaciones,'propiedades'=>$tipos]);
     }
 
     /**
@@ -38,7 +41,17 @@ class InmbuebleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newIn = new Inmueble;
+        $newIn->nombre = $request->nombre;
+        $newIn->venta_renta = $request->venta_renta;
+        $newIn->id_propiedad = $request->propiedad;
+        $newIn->id_ubicacion = $request->ubicacion;
+
+        $newIn->save();
+        return redirect('/inmuebles')->with('status','Se agrego el inmueble exitosamente');
+
+
+
     }
 
     /**
@@ -85,4 +98,22 @@ class InmbuebleController extends Controller
     {
         //
     }
+
+
+    public function delete($id){
+
+        $del = Inmueble::find($id);
+        $del->delete();
+        return redirect('/inmuebles')->with('status','El inmueble fue borrada con exito');
+    }
+
+    public function filtro(Request $request){
+
+        $filtro = Inmueble::filtro($request->venta_renta,$request->tipo,$request->ubicacion);
+
+
+        return view('inmuebles.show',['resultados'=>$filtro]);
+    }
+
+
 }

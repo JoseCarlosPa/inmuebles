@@ -30,7 +30,7 @@
 <div id="app">
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="{{route('inmbuelbes.index')}}">Inmbuebles</a>
+        <a href="{{route('inmuebles.index')}}">Inmbuebles</a>
         <a href="{{route('ubicaciones.index')}}">Ubicaciones</a>
         <a href="{{route('propiedades.index')}}">Tipos de Propiedad</a>
         <a data-toggle="modal" data-target="#exampleModal" href="#">Salir</a>

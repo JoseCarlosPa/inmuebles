@@ -29,14 +29,16 @@ Route::get('/bolsa-de-trabajo', function () {
     return view('bolsa');
 });
 
+Route::post('/filtro','InmbuebleController@filtro');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/inmbuelbes','InmbuebleController');
+Route::resource('/inmuebles','InmbuebleController');
 Route::resource('/propiedades','PropiedadController');
 Route::resource('/ubicaciones','UbicacionController');
 
 Route::delete('/ubicaciones/del/{id}','UbicacionController@delete');
 Route::delete('/propiedades/del/{id}','PropiedadController@delete');
-Route::delete('/inmbuelbes/del/{id}','InmbuebleController@delete');
+Route::delete('/inmuebles/del/{id}','InmbuebleController@delete');
 

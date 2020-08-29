@@ -5,39 +5,42 @@
         <img src="{{asset('images/fondos/fondo_ini.png')}}" class="fondo-inicio" alt="fondo inicio">
     </div>
     <div class="container-fluid">
-        <div class="row botones-buscar">
-            <div class="col-sm-3 borders">
-                <select name="venta-renta">
-                    <option value="N/A" selected>Venta/Renta</option>
-                    <option value="venta" >Venta</option>
-                    <option value="renta" >Renta</option>
-                </select>
-            </div>
-            <div class="col-sm-3 borders">
-                <select name="tipo">
-                    <option value="N/A" selected>Tipo de Propiedad</option>
-                    @foreach($propiedades as $propiedad)
-                        <option value="{{$propiedad->name}}">{{$propiedad->name}}</option>
-                    @endforeach
+        <form action="/filtro" method="post">
+            @csrf
+            <div class="row botones-buscar">
+                <div class="col-sm-3 borders">
+                    <select name="venta_renta">
+                        <option value="N/A" selected>Venta/Renta</option>
+                        <option value="venta" >Venta</option>
+                        <option value="renta" >Renta</option>
+                    </select>
+                </div>
+                <div class="col-sm-3 borders">
+                    <select name="tipo">
+                        <option value="N/A" selected>Tipo de Propiedad</option>
+                        @foreach($propiedades as $propiedad)
+                            <option value="{{$propiedad->id}}">{{$propiedad->name}}</option>
+                        @endforeach
 
-                </select>
-            </div>
-            <div class="col-sm-3 borders">
-                <select name="ubicacion">
-                    <option value="N/A" selected>Ubicacion</option>
-                    @foreach($ubicaciones as $ubicacion)
-                        <option value="{{$ubicacion->name}}">{{$ubicacion->name}}</option>
-                    @endforeach
-                </select>
-            </div>
+                    </select>
+                </div>
+                <div class="col-sm-3 borders">
+                    <select name="ubicacion">
+                        <option value="N/A" selected>Ubicacion</option>
+                        @foreach($ubicaciones as $ubicacion)
+                            <option value="{{$ubicacion->id}}">{{$ubicacion->name}}</option>
+                        @endforeach
+                    </select>
+                </div>
 
-            <div class="col-sm-3 buscar">
-                <button type="submit" class="search-button">
-                Buscar <img src="{{asset('images/search.svg')}}" alt="icono buscar" class="search-icon">
-                </button>
-            </div>
+                <div class="col-sm-3 buscar">
+                    <button type="submit" class="search-button">
+                    Buscar <img src="{{asset('images/search.svg')}}" alt="icono buscar" class="search-icon">
+                    </button>
+                </div>
 
-        </div>
+            </div>
+        </form>
     </div>
     <br>
     <div class ="container">
