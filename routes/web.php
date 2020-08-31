@@ -36,6 +36,18 @@ Route::get('/novatech-silao-terrenos-industriales', function () {
     return view('paginas.nov2');
 });
 
+Route::get('/propiedad-rancho-san-pedro', function () {
+    return view('paginas.sanp');
+});
+Route::get('/patio-logistico-emiliano-zapata', function () {
+    return view('paginas.pat');
+});
+
+Route::get('/patio-logistico-san-isidro', function () {
+    return view('paginas.logi');
+});
+
+
 
 
 

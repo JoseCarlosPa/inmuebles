@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b257192b-f87a-4433-aa21-a96bbcb4c849" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/pags/coef-nov2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/corr-nov2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/ensa-nv2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/etap2-nov2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/etapa-nov2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/pre-nov2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi2-nov2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/img-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/logi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi2-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi3-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi4-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi5-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pags/ubi6-log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/paginas/logi.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/paginas/nov2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paginas/nov2.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/pags/ubi4-pat.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/pags/ubi4-pat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/paginas/pat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paginas/pat.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/paginas/sanp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/paginas/sanp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +198,7 @@
       <workItem from="1598706209154" duration="1815000" />
       <workItem from="1598708053495" duration="21818000" />
       <workItem from="1598843763808" duration="3314000" />
-      <workItem from="1598879912966" duration="942000" />
+      <workItem from="1598879912966" duration="4284000" />
     </task>
     <servers />
   </component>
