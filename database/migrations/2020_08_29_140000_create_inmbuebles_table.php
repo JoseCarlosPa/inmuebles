@@ -22,6 +22,7 @@ class CreateInmbueblesTable extends Migration
             $table->string('extracto')->nullable();
             $table->string('img')->nullable();
             $table->string('pdf')->nullable();
+            $table->string('link')->nullable();
             $table->timestamps();
 
             $table->foreign('id_propiedad')->references('id')->on('propiedads');

@@ -59,6 +59,11 @@
                         <input type="file"  name="pdf">
                     </div>
 
+                    <div class="form-group">
+                        <label for="link">Link</label>
+                        <input type="text" class="form-control" id="link" placeholder="link" value="{{$inmueble->link}}" name="link">
+
+                    </div>
 
                     <input type="hidden" name="img_aux" value="{{$inmueble->img}}">
                     <input type="hidden" name="pdf_aux" value="{{$inmueble->pdf}}">

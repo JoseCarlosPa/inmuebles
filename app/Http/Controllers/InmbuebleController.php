@@ -96,6 +96,7 @@ class InmbuebleController extends Controller
         $editIn->id_propiedad = $request->propiedad;
         $editIn->id_ubicacion = $request->ubicacion;
         $editIn->extracto = $request->extracto;
+        $editIn->link = $request->link;
 
         if(($request->img)== null){
             $editIn->img = $request->img_aux;

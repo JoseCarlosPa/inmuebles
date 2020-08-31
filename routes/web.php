@@ -29,6 +29,16 @@ Route::get('/bolsa-de-trabajo', function () {
     return view('bolsa');
 });
 
+Route::get('/novatech-apaseo-terrenos-industriales', function () {
+    return view('paginas.nov1');
+});
+Route::get('/novatech-silao-terrenos-industriales', function () {
+    return view('paginas.nov2');
+});
+
+
+
+
 Route::post('/filtro','InmbuebleController@filtro');
 
 Auth::routes();
