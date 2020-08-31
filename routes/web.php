@@ -47,6 +47,10 @@ Route::get('/patio-logistico-san-isidro', function () {
     return view('paginas.logi');
 });
 
+Route::get('/novatech-colon-terreno-industrial', function () {
+    return view('paginas.nov3');
+});
+
 
 
 
