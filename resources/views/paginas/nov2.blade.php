@@ -114,7 +114,7 @@
                     <br><br>Por su privilegiada ubicación geográfica, NOVOTECH APASEO es una opción excelente en
                     términos de logística
                     y rentabilidad.
-                    <br><br>Dotada de servicios, su empresa gozará de una óptima relación costo-beneficio.</p>
+                  </p>
             </div>
         </div>
         <br><br>
@@ -125,216 +125,137 @@
         </div>
         <div class="row">
             <div class="col-sm-12 quienes-main">
-                <h4>CORREDOR INDUSTRIAL</h4>
+                <h4>INFRAESTRUCTURA</h4>
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/coore-no1.png')}}" alt="imagen novatec" width="100%">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>LOTIFICACIÓN</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/lot-nov1.png')}}" alt="imagen novatec" width="100%">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>SERVICIOS</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-                    <div class="col-sm-8 quienes-main text-left">
-                        <h4>AGUA</h4>
-                        <p class="text-nova">n 50 m3 por lote</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-                    <div class="col-sm-8 quienes-main text-left">
-                        <h4>SERVICIOS SANITARIOS </h4>
-                        <p class="text-nova">n Drenaje</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-                    <div class="col-sm-8 quienes-main text-left">
-                        <h4>VIALIDADES </h4>
-                        <p class="text-nova">n Servidumbre industrial 17 cm n Carpeta asfáltica 7 cm en n tramos rectos
-                            n Concreto hidráulico 20 cm en zonas de giro</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-                    <div class="col-sm-8 quienes-main text-left">
-                        <h4>ENERGÍA ELÉCTRICA</h4>
-                        <p class="text-nova"> n 15 kva por lote (electricidad 13.5 kW)</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-sm-4">
-
-                    </div>
-                    <div class="col-sm-8 quienes-main text-left">
-                        <h4>OTROS</h4>
-                        <p class="text-nova"> n Barda perimetral de block con cara de piedra n Caseta con control de
-                            acceso n Vigilancia n CCTV n Alumbrado led</p>
-                    </div>
-                </div>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>LOTE EJEMPLO</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/lote-ej-nov1.png')}}" alt="imagen novatec" width="100%">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>CONSTRUCCIÓN DE NAVES</h4>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-sm-6 text-center">
-                <img src="{{asset('images/pags/construccion-nov1.png')}}" alt="imagen novatec" width="100%">
-            </div>
-
-            <div class="col-sm-6 text-left">
-                <p class="text-nova">
-                    Nuestra prioridad es consolidar tu inversión a través de la edificación (construcción) de espacios
-                    adecuados a la demanda creciente del Corredor Industrial del Bajío. La tendencia del sector
-                    industrial del Bajío se consolida en naves industriales de 5,000 m2 o mayores, construidas a la
-                    medida y una incierta demanda de espacios inferiores de 5,000 m2.
-                    <br><br>EL MERCADO ESPECÍFICO PARA
-                    ALMACENAMIENTO
-                    <br><br>ESPECIFICACIONES (NAVE TIPO) <br>
-                    Las naves se diseñan de acuerdo a su presupuesto y
-                    necesidades, siendo el objetivo satisfacer las especificaciones técnicas a cada uno de los clientes
-                    en el sector metalmecánica, logística para otorgar la rigidez necesaria.</p>
-            </div>
-        </div>
-        <br><br>
         <div class="row">
             <div class="col-sm-12 text-left">
-                <p class="text-nova">
-                    n Modelo Base con muro de block liso hueco 12-20-40 en color natural 2.5m de altura. Varillas
-                    ahogadas por el centro del block para otorgar rigidez necesaria. n Por requisición estética se puede
-                    utilizar block caravista de diversos colores (arena, rojo, negro). Firme de 15 cm de espesor de
-                    concreto tipo MR-35 reforzado con tecnólogas de fibra metálica ondulada con una capacidad de carga
-                    de 5-6 ton/m2.<br> n Acabado pulido con juntas de control y de construcción con sello autonivelante.
-                    n
-                    La capacidad de carga del firme puede variar según las especificaciones del cliente.</p>
-            </div>
-        </div>
-        <br><br>
-        <div class="row">
+                <div class ="row">
+                    <div class ="col-sm-4">
 
-            <div class="col-sm-6 text-left">
-                <p class="text-nova">
-                    Perfil IPR de acero A-36, sección variable con aplicación de primario y pintura de acabado en color
-                    blanco tanto en columnas como en vigas.
-                    <br><br> Montenes de 8" calibre 10 acabados blanco y fondo gris.<br>
-                    Lámina pintro KR-18 calibre 24 color blanco y fondo gris intercalada con lámina acrílica
-                    transparente compatible con KR-18 para proporcionar luz natural dentro de la nave.
-                    <br><br> Se pueden usar
-                    diferentes tipos de lámina, para mejor aislamiento térmico y acústico.<br><br> Canalón de lámina
-                    pinto color
-                    blanco calibre 24</p>
-            </div>
-            <div class="col-sm-6 text-center">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="{{asset('images/pags/vg1-nov1.png')}}" alt="imagen novatec" width="70%">
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Infraestructura instalada para requerimientos mayores.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="{{asset('images/pags/vg2-nov2.png')}}" alt="imagen novatec" width="70%">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <img src="{{asset('images/pags/vg3-nv1.png')}}" alt="imagen novatec" width="70%">
-                    </div>
-                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <p class="text-nova text-left">Contra-flameos de perfil angular de 1 1/2 para unir a los montenes entre si y
-                    proporcionar rigidez de la estructura.
-                    <br><br>
-                    Contra-venteos de perfil redondo liso con diámetro variable,
-                    para proporcionar una estructura rígida.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>CLIENTES</h4>
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Cableado aéreo de media tensión y acometida subterránea a pie de lote (registro).</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Agua</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Vialidades con especificaciones para movimientos industriales</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Asfalto en vialidades y concreto hidráulico en acceso, curvas y radio de giros.</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Barda perimetral y cerca electrificada</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Caseta de acceso con control vehicular (personal de seguridad y plumas automatizadas.</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Circuito cerrado de TV (cámaras de vigilancia) en acceso y vialidades principales.</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Motivo de acceso arquitectónico</p>
+                    </div>
+                </div>
+                <br>
+                <div class ="row">
+                    <div class ="col-sm-4">
+
+                    </div>
+                    <div class ="col-sm-8">
+                        <p class="text-nova">Alumbrado público en vialudades y áreas comunes con luminarias LED´s.</p>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/clientes-nv1.png')}}" alt="imagen novatec" width="100%">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>GALERÍA</h4>
+                <img src="{{asset('images/pags/corr-nov2.png')}}" alt="imagen novatec" width="100%">
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/gal-nov1.png')}}" alt="imagen novatec" width="100%">
+                <img src="{{asset('images/pags/ubi2-nov2.png')}}" alt="imagen novatec" width="100%">
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 quienes-main">
-                <h4>CENTRO DE NEGOCIOS</h4>
-            </div>
-        </div>
-        <br>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <img src="{{asset('images/pags/neg-nov1.png')}}" alt="imagen novatec" width="100%">
+                <img src="{{asset('images/pags/pre-nov2.png')}}" alt="imagen novatec" width="100%">
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="{{asset('images/pags/etapa-nov2.png')}}" alt="imagen novatec" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="{{asset('images/pags/etap2-nov2.png')}}" alt="imagen novatec" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="{{asset('images/pags/coef-nov2.png')}}" alt="imagen novatec" width="100%">
+            </div>
+        </div>
+
         <br><br>
         <div class="row">
             <div class="col-sm-12 text-center">
