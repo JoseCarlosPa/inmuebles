@@ -50,7 +50,9 @@ Route::get('/patio-logistico-san-isidro', function () {
 Route::get('/novatech-colon-terreno-industrial', function () {
     return view('paginas.nov3');
 });
-
+Route::get('/cerro-de-santa-maria', function () {
+    return view('paginas.cerro');
+});
 
 
 
