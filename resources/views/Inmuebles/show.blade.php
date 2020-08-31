@@ -58,7 +58,7 @@
                         <div class="card-footer">
                             <div class="row">
                                 <div class="col-sm-12 text-right ">
-                                    <a href="{{route('inmuebles.show',$resultado->id)}}" class="btn btn-primary">ver más</a>
+                                    <a href="{{$resultado->link}}"target="_blank" class="btn btn-primary">ver más</a>
                                 </div>
                             </div>
                         </div>
