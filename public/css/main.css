@@ -213,10 +213,15 @@ footer{
     margin-left: 0;
     margin-right: 0;
     text-align: center;
+    height: 3vw;
 }
 
 .brd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     border-right:0.5px solid white;
-    font-size: 13px;
+    font-size: 12px;
 }
 

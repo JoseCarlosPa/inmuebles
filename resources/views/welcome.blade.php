@@ -64,7 +64,7 @@
                                 <div class="col-sm-3 brd">{{$resultado->m2Terreno}}</div>
                                 <div class="col-sm-3 brd">{{$resultado->m2Cons}}</div>
                                 <div class="col-sm-3 brd">{{$resultado->agua}}</div>
-                                <div class="col-sm-3 "style="font-size: 13px">{{$resultado->elect}}</div>
+                                <div class="col-sm-3 brd ">{{$resultado->elect}}</div>
                             </div>
 
                         </div>

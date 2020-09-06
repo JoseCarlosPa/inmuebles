@@ -116,6 +116,14 @@
                             <p>Av. Ignacio Altamirano No. 590. plaza Downtown Local B5 y B6. Zona Central, La Paz, BCS</p>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>Siguenos</strong></p>
+                            <br>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

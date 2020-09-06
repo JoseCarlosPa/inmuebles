@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Album;
 use App\Inmueble;
 use App\Propiedad;
 use App\Ubicacion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class InmbuebleController extends Controller
 {
@@ -65,7 +67,8 @@ class InmbuebleController extends Controller
         $inm = Inmueble::find($id);
         $ubicaciones = Ubicacion::get();
         $tipos = Propiedad::get();
-        return view('Inmuebles.ver',['datos'=>$inm,'ubicaciones'=>$ubicaciones,'tipos'=>$tipos]);
+        $album = Album::where('id_inmuebe',$id)->get();
+        return view('Inmuebles.ver',['datos'=>$inm,'ubicaciones'=>$ubicaciones,'tipos'=>$tipos,'albumes'=>$album]);
     }
 
     /**
@@ -79,7 +82,9 @@ class InmbuebleController extends Controller
         $in = Inmueble::find($id);
         $propiedades = Propiedad::get();
         $ubicaciones = Ubicacion::get();
-        return view('Inmuebles.edit',['inmueble'=>$in,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+
+        $albumes = Album::where('id_inmuebe',$id)->get();
+        return view('Inmuebles.edit',['inmueble'=>$in,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones,'albumes'=>$albumes]);
 
     }
 
@@ -153,6 +158,8 @@ class InmbuebleController extends Controller
         return redirect('/inmuebles')->with('status','El inmueble fue borrada con exito');
     }
 
+
+
     public function filtro(Request $request){
 
         $filtro = Inmueble::filtro($request->venta_renta,$request->tipo,$request->ubicacion);
@@ -193,6 +200,28 @@ class InmbuebleController extends Controller
 
         $ubicaciones = Ubicacion::get();
         return view('filtros.sanluis',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+    }
+
+    public function addimg(Request $request){
+
+        $newImg = new Album;
+
+        $newImg->id_inmuebe = $request->id_inmuebe;
+        $file = $request->file('img');
+        \Storage::disk('local')->put($request->img,\File::get($file));
+
+        //$request->file('img')->store('public');
+        $newImg->img = $request->file('img')->store('');
+        $newImg->save();
+        return Redirect::back();
+
+    }
+
+    public function deleteImg($id){
+
+        $del = Album::find($id);
+        $del->delete();
+        return Redirect::back();
     }
 
 

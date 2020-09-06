@@ -124,7 +124,64 @@
                     <input type="hidden" name="pdf_aux" value="{{$inmueble->pdf}}">
                     <button type="submit" class="btn btn-primary">Guardar</button>
                 </form>
+                <br><br>
 
+                    <button class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal"> + Agregar fotos</button>
+
+                <br><br>
+                <table id="example" class="display nowrap text-center" width="100%">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Imagen</th>
+                        <th>Eliminar</th>
+
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    @foreach($albumes as $album)
+                        <tr>
+                            <td>{{$album->id}}</td>
+                            <td><img src="{{asset('uploads/'.$album->img)}}" alt="IMG" width="50%"></td>
+                            <td><form action="/delImages/{{$album->id}}"
+                                      method="post">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="button" class="btn btn-outline-danger"
+                                            onclick="confirm('{{ __("¿Estás seguro de que quieres eliminar esta imagen?") }}') ? this.parentElement.submit() : ''">
+                                        {{ __('Eliminar') }}
+                                    </button>
+                                </form></td>
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar imagen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/addImages" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="modal-body">
+                        <input type="file" name="img">
+                        <input type="hidden" name="id_inmuebe" value="{{$inmueble->id}}">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

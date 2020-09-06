@@ -69,6 +69,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/inmuebles','InmbuebleController');
 Route::resource('/propiedades','PropiedadController');
 Route::resource('/ubicaciones','UbicacionController');
+Route::resource('/album','AlbumController');
+Route::post('/addImages','InmbuebleController@addimg');
+
+Route::delete('/delImages/{id}','InmbuebleController@deleteImg');
 
 Route::delete('/ubicaciones/del/{id}','UbicacionController@delete');
 Route::delete('/propiedades/del/{id}','PropiedadController@delete');
