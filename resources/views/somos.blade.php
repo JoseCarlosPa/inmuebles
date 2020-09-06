@@ -1,73 +1,132 @@
 @extends('layouts.app')
 @section('title','Insignia | Quienes somos ')
 @section('content')
-    <div class="bg-inicio">
-        <img src="{{asset('images/fondos/fondo_quienes.png')}}" class="fondo-inicio" alt="fondo inicio">
-    </div>
-
-    <div class ="container">
-        <div class ="row">
-            <div class ="col-sm-12 text-center">
-                <br>
-                <img src="{{asset('images/look.png')}}" class="look-img" alt="buscar cliente">
-            </div>
-        </div>
-        <br>
-        <div class="quienes-main">
-            <div class="row ">
-                <div class ="col-sm-12">
-                    <h2><strong>¿QUÉ HACEMOS?</strong></h2>
+    <br><br>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>QUIENES SOMOS</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
+                            lacus justo. Donec venenatis, sem a commodo lobortis, sem augue cursus erat, eu sodales enim
+                            mi sit amet magna. Aenean quis interdum orci. Cras sit amet consequat est.</p>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="row quienes-main">
-                <div class ="col-sm-3">
-                </div>
-                <div class ="col-sm-6">
-                    <h4>Comercializamos, asesoramos y acompañamos a nuestrocliente en cada paso del proceso inmobiliario, guiándolo asertivamente y siempre cuidando su patrimonio.</h4>
-                </div>
-                <div class ="col-sm-3">
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class ="row">
-            <div class ="col-sm-12 text-center">
-                <img src="{{asset('images/diagram.png')}}" class="diagram" alt="buscar cliente">
-            </div>
-        </div>
-        <br>
-        <div class="quienes-main">
-            <div class="row ">
-                <div class ="col-sm-12">
-                    <h2><strong>¿CÓMO LO HACEMOS?</strong></h2>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>QUÉ HACEMOS</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
+                            lacus justo. Donec venenatis, sem a commodo lobortis, sem augue cursus erat, eu sodales enim
+                            mi sit amet magna. Aenean quis interdum orci. Cras sit amet consequat est.</p>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="row quienes-main">
-                <div class ="col-sm-3">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>CÓMO LO HACEMOS</h2>
+                    </div>
+                    <div class="col-sm-12">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
+                            lacus justo. Donec venenatis, sem a commodo lobortis, sem augue cursus erat, eu sodales enim
+                            mi sit amet magna. Aenean quis interdum orci. Cras sit amet consequat est.</p>
+                    </div>
                 </div>
-                <div class ="col-sm-6">
-                    <h4>Por medio de un plan de comercialización hecho a la medida y necesidad de cada cliente, potencializando dicho plan con alianzas estratégicas.</h4>
-                </div>
-                <div class ="col-sm-3">
-                </div>
-            </div>
-        </div>
-        <hr width="50%">
-        <div class="row">
-            <div class ="col-sm-12 text-center">
-                <h3>PROPIEDADES <l style="color: #BB1E23">INSIGNIA</l> <br>EN MÉXICO</h3>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div class ="row">
-            <div class ="col-sm-12 text-center">
-                <a href="/contacto"><button class="button-contacto">CONTÁCTANOS</button></a>
             </div>
         </div>
         <br><br>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>MISIÓN</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="" alt="IMG" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Lorem ipsum dolor sit amet, consecteturv adipiscing elit. Phasellus a lacus justo. Donec
+                            venenatis, sem a commodo lobortis, sem augue cursus erat, eu sodales enim mi sit amet magna.
+                            Aenean quis interdum orci. Cras sit vamet consequat est.</p>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>VISIÓN</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="" alt="IMG" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Lorem ipsum dolor sit amet, consecteturv adipiscing elit. Phasellus a lacus justo. Donec
+                            venenatis, sem a commodo lobortis, sem augue cursus erat, eu sodales enim mi sit amet magna.
+                            Aenean quis interdum orci. Cras sit vamet consequat est.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>OFICINAS</h2>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p><strong>LA PAZ, B.C.S. </strong><br> Plaza Downtown (612) 138 3999</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>LEÓN, GTO </strong><br>  Plaza Forum (477) 927 4841</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="" alt="IMG" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 

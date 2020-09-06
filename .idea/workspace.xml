@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b257192b-f87a-4433-aa21-a96bbcb4c849" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/servicios-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/servicios-guan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/servicios-qro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/servicios-snl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/filtros/bajacalifornia.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/filtros/guanajuato.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/filtros/queretaro.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/filtros/sanluis.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Inmuebles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Inmuebles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InmbuebleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_29_140000_create_inmbuebles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/fondos/fondo_ini.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/fondos/fondo_ini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Inmuebles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Inmuebles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Inmuebles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Inmuebles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Inmuebles/ver.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Inmuebles/ver.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/servicios.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/servicios.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/somos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/somos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,20 +161,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/pags" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/filtros" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.xslt" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/filtros" />
+      <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/public/images/fondos" />
       <recent name="$PROJECT_DIR$/public/images/pags" />
       <recent name="$PROJECT_DIR$/resources/views/paginas" />
-      <recent name="$PROJECT_DIR$/resources/views/Ubicaciones" />
-      <recent name="$PROJECT_DIR$/resources/views/Propiedades" />
-      <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images/fondos" />
@@ -185,7 +209,9 @@
       <workItem from="1598706209154" duration="1815000" />
       <workItem from="1598708053495" duration="21818000" />
       <workItem from="1598843763808" duration="3314000" />
-      <workItem from="1598879912966" duration="7344000" />
+      <workItem from="1598879912966" duration="7639000" />
+      <workItem from="1599321462509" duration="7629000" />
+      <workItem from="1599413926722" duration="3952000" />
     </task>
     <servers />
   </component>
@@ -193,23 +219,23 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1598716278764">
+    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599323940476">
       <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
-    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598716278764" />
-    <state x="2051" y="96" key="NewPhpFileDialog" timestamp="1598844520173">
-      <screen x="1280" y="-378" width="1920" height="1080" />
+    <state x="1978" y="-75" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1599323940476" />
+    <state x="514" y="351" key="NewPhpFileDialog" timestamp="1599417501842">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="514" y="351" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1598730928780" />
+    <state x="514" y="351" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1599417501842" />
     <state x="2051" y="96" key="NewPhpFileDialog/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598844520173" />
     <state x="1925" y="-68" width="630" height="460" key="find.popup" timestamp="1598739113662">
       <screen x="1280" y="-378" width="1920" height="1080" />
     </state>
     <state x="1925" y="-68" width="630" height="460" key="find.popup/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598739113662" />
-    <state x="1905" y="38" key="run.anything.popup" timestamp="1598715922767">
-      <screen x="1280" y="-378" width="1920" height="1080" />
+    <state x="1905" y="38" key="run.anything.popup" timestamp="1599322639776">
+      <screen x="1280" y="-355" width="1920" height="1057" />
     </state>
-    <state x="1905" y="52" key="run.anything.popup/1280.-355.1920.1057/0.23.1280.777@1280.-355.1920.1057" timestamp="1598665550714" />
+    <state x="1905" y="38" key="run.anything.popup/1280.-355.1920.1057/0.23.1280.777@1280.-355.1920.1057" timestamp="1599322639776" />
     <state x="1905" y="38" key="run.anything.popup/1280.-378.1920.1080/0.0.1280.800@1280.-378.1920.1080" timestamp="1598715922767" />
   </component>
 </project>

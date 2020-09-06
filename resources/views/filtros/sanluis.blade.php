@@ -1,9 +1,44 @@
 @extends('layouts.app')
-@section('title','Insignia | Inicio ')
+@section('title','Insignia | San Luis Potosi ')
 @section('content')
-    <div class="bg-inicio">
-        <img src="{{asset('images/fondos/fondo_ini.png')}}" class="fondo-inicio" alt="fondo inicio">
+
+    <br><br>
+
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>SAN LUIS POTOSÍ</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach($resultados as $resultado)
+                <div class="col-sm-4">
+                    <a href="{{route('inmuebles.show',$resultado->id)}}">
+                        <div class="card" style="width: 100%;margin-top:10%; height: 22vw">
+                            <img class="card-img-top" src="{{asset('uploads/'.$resultado->img)}}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
+                            </div>
+                            <br>
+                            <div class="text-center"><button class="btn-inicio">{{$resultado->venta_renta}}</button></div>
+                            <br>
+                            <div class="row bottom-inicio">
+                                <div class="col-sm-3 brd">{{$resultado->m2Terreno}}</div>
+                                <div class="col-sm-3 brd">{{$resultado->m2Cons}}</div>
+                                <div class="col-sm-3 brd">{{$resultado->agua}}</div>
+                                <div class="col-sm-3 "style="font-size: 13px">{{$resultado->elect}}</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            @endforeach
+        </div>
+
     </div>
+
     <div class="container-fluid">
         <br><br>
         <form action="/filtro" method="post">
@@ -45,34 +80,4 @@
             </div>
         </form>
     </div>
-    <br>
-    <div class="container">
-        <br>
-        <div class="row">
-            @foreach($resultados as $resultado)
-                <div class="col-sm-4">
-                    <a href="{{route('inmuebles.show',$resultado->id)}}">
-                        <div class="card" style="width: 100%;margin-top:10%; height: 22vw">
-                            <img class="card-img-top" src="{{asset('uploads/'.$resultado->img)}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
-                            </div>
-                            <br>
-                            <div class="text-center"><button class="btn-inicio">{{$resultado->venta_renta}}</button></div>
-                            <br>
-                            <div class="row bottom-inicio">
-                                <div class="col-sm-3 brd">{{$resultado->m2Terreno}}</div>
-                                <div class="col-sm-3 brd">{{$resultado->m2Cons}}</div>
-                                <div class="col-sm-3 brd">{{$resultado->agua}}</div>
-                                <div class="col-sm-3 "style="font-size: 13px">{{$resultado->elect}}</div>
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-            @endforeach
-        </div>
-
-    </div>
-
 @endsection

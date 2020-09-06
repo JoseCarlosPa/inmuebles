@@ -63,7 +63,9 @@ class InmbuebleController extends Controller
     public function show(Inmueble $inmbueble,$id)
     {
         $inm = Inmueble::find($id);
-        return view('Inmuebles.ver',['datos'=>$inm]);
+        $ubicaciones = Ubicacion::get();
+        $tipos = Propiedad::get();
+        return view('Inmuebles.ver',['datos'=>$inm,'ubicaciones'=>$ubicaciones,'tipos'=>$tipos]);
     }
 
     /**
@@ -96,7 +98,15 @@ class InmbuebleController extends Controller
         $editIn->id_propiedad = $request->propiedad;
         $editIn->id_ubicacion = $request->ubicacion;
         $editIn->extracto = $request->extracto;
-        $editIn->link = $request->link;
+
+        $editIn->precio = $request->precio;
+        $editIn->ciudad = $request->ciudad;
+        $editIn->municipio = $request->municipio;
+        $editIn->m2Terreno = $request->m2t;
+        $editIn->m2Cons = $request->m2c;
+
+        $editIn->agua = $request->agua;
+        $editIn->elect = $request->elect;
 
         if(($request->img)== null){
             $editIn->img = $request->img_aux;
@@ -112,7 +122,7 @@ class InmbuebleController extends Controller
             $editIn->pdf = $request->pdf_aux;
         }else{
             $file = $request->file('pdf');
-            \Storage::disk('local')->put($request->img,\File::get($file));
+            \Storage::disk('local')->put($request->pdf,\File::get($file));
 
             $editIn->pdf = $request->file('pdf')->store('');
         }
@@ -151,6 +161,42 @@ class InmbuebleController extends Controller
         $ubicaciones = Ubicacion::get();
         return view('inmuebles.show',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
     }
+
+    public function bajaC(){
+
+        $filtro = Inmueble::where('id_ubicacion',1)->get();
+        $propiedades = Propiedad::get();
+
+        $ubicaciones = Ubicacion::get();
+        return view('filtros.bajacalifornia',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+    }
+    public function qro(){
+
+        $filtro = Inmueble::where('id_ubicacion',2)->get();
+        $propiedades = Propiedad::get();
+
+        $ubicaciones = Ubicacion::get();
+        return view('filtros.queretaro',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+    }
+    public function Guan(){
+
+        $filtro = Inmueble::where('id_ubicacion',3)->get();
+        $propiedades = Propiedad::get();
+
+        $ubicaciones = Ubicacion::get();
+        return view('filtros.guanajuato',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+    }
+    public function sanL(){
+
+        $filtro = Inmueble::where('id_ubicacion',4)->get();
+        $propiedades = Propiedad::get();
+
+        $ubicaciones = Ubicacion::get();
+        return view('filtros.sanluis',['resultados'=>$filtro,'propiedades'=>$propiedades,'ubicaciones'=>$ubicaciones]);
+    }
+
+
+
 
 
 

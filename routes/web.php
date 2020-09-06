@@ -19,9 +19,13 @@ Route::get('/quienes-somos', function () {
     return view('somos');
 });
 
-Route::get('/servicios', function () {
-    return view('servicios');
-});
+Route::get('/propiedades-all','WelcomeController@servicios');
+Route::get('/baja-california','InmbuebleController@bajaC');
+Route::get('/san-luis-potosi','InmbuebleController@sanL');
+Route::get('/queretaro','InmbuebleController@qro');
+Route::get('/guanajuato','InmbuebleController@Guan');
+
+
 Route::get('/contacto', function () {
     return view('contacto');
 });

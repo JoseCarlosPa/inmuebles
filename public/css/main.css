@@ -12,9 +12,14 @@
 
 .in{
     margin: 5px;
-    padding: 5px;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color:#2C2925;
  }
 
 
@@ -24,13 +29,10 @@
     margin: 0;
 }
 
-.botones-buscar{
-    background: #BB1E23;
-    color: white;
-
-}
 
 .borders{
+    background: #BB1E23;
+    color: white;
     border-right: 2px solid white;
     display: flex;
     align-items: center;
@@ -43,7 +45,11 @@ select{
     background: transparent;
     color: white;
     border: transparent;
-    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7vw;
 }
 
 .buscar{
@@ -161,4 +167,56 @@ a{
     width: 100%;
 }
 
+footer{
+    color: white;
+    background: #252525;
+}
+
+.card-title{
+    color: #BB1E23;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+.show-bg{
+    background:#BA1E22 ;
+    color: white;
+    font-weight: bold;
+}
+
+.mycontainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.btn-download{
+    background: #2C2925;
+    color: white;
+    border: transparent;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 4px;
+
+}
+
+.btn-inicio{
+    background: #2C2925;
+    color: white;
+    font-size: 2vw;
+    border: transparent;
+    width: 16vw;
+    height: 3vw;
+}
+
+.bottom-inicio{
+    background: #BA1E22;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+.brd{
+    border-right:0.5px solid white;
+    font-size: 13px;
+}
 

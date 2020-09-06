@@ -15,11 +15,22 @@ class CreateInmbueblesTable extends Migration
     {
         Schema::create('inmbuebles', function (Blueprint $table) {
             $table->id();
-            $table->string('venta_renta')->nullable();
             $table->string('nombre')->nullable();
+            $table->float('precio')->nullable();
+            $table->string('venta_renta')->nullable();
             $table->unsignedBigInteger('id_propiedad');
             $table->unsignedBigInteger('id_ubicacion');
+            $table->string('descripcion')->nullable();
+            $table->string('ciudad')->nullable();
+            $table->string('municipio')->nullable();
+
             $table->string('extracto')->nullable();
+            $table->string('m2Terreno')->nullable();
+            $table->string('m2Cons')->nullable();
+            $table->string('agua')->nullable();
+            $table->string('elect')->nullable();
+
+            $table->string('portada')->nullable();
             $table->string('img')->nullable();
             $table->string('pdf')->nullable();
             $table->string('link')->nullable();

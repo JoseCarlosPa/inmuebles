@@ -28,12 +28,13 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/"><img src="{{asset('images/logo.png')}}" alt="logo insignia" class="img-logo"> </a>
+        <div style="margin-left: 0"></div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto" >
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link in" href="/">INICIO</a>
                 </li>
@@ -41,7 +42,7 @@
                     <a class="nav-link in" href="/quienes-somos">QUIÉNES SOMOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/servicios">SERVICIOS</a>
+                    <a class="nav-link in" href="/propiedades-all">PROPIEDADES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link in" href="/bolsa-de-trabajo">BOLSA DE TRABAJO</a>
@@ -49,7 +50,15 @@
                 <li class="nav-item">
                     <a class="nav-link in" href="/contacto">CONTACTO</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link in" href="/contacto">NOTICIAS</a>
+                </li>
             </ul>
+        </div>
+        <div class="text-right">
+            <p class="text-nova" style="color: #2C2925;font-size: 14px"><a style="color: #2C2925"
+                                                                           href="mailto:contacto@insigniabienesraices.com">contacto@insigniabienesraices.com</a>
+                <br>Plaza Downtown, La Paz, B.C.S. / Plaza Forum, León, GTO. <br>+52.612.138.3999 / +52.477.927.4841</p>
         </div>
     </nav>
 
@@ -57,26 +66,60 @@
     <main>
         @yield('content')
     </main>
-
+    <br><br><br>
     <footer>
-        <div class ="container">
-            <hr>
-            <div class ="row text-center">
-                <div class ="col-md-3 col-sm-12">
-                    Copyright y todo lo de derechos
-                </div>
-                <div class ="col-sm-12 col-md-6"></div>
-                <div class ="col-sm-12 col-md-3">
-                    <div class ="row text-center">
-                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/facebook.png')}}" alt="facebook" class="footer-logos"></a> </div>
-                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/twitter.png')}}" alt="facebook" class="footer-logos"> </a></div>
-                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/linkedin.png')}}" alt="facebook" class="footer-logos"> </a></div>
-                        <div class ="col-sm-2"><a href="" target="_blank"><img src="{{asset('images/instagram.png')}}" alt="facebook" class="footer-logos"> </a></div>
+        <div class="container">
+            <br><br>
+            <div class="row text-left">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>INSIGNIA EXCELENCIA INMOBILIARIA</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>En INSIGNIA te asesoramos en cada paso de tu inversión patrimonial. En la adquisición de
+                                la tierra, asesoría en la construcción y en la búsqueda del cliente ideal. Más que una
+                                propiedad, te ofrecemos un modelo de negocio.</p>
+                        </div>
                     </div>
                 </div>
-                <br><br><br>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>MENÚ</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="text-decoration-none" style="list-style:none;margin-left: -15%">
+                                <li><a href="/">INICIO</a></li>
+                                <li><a href="/quienes-somos">QUIÉNES SOMOS</a></li>
+                                <li><a href="/propiedades-all">PROPIEDADES</a></li>
+                                <li><a href="/bolsa-de-trabajo">BOLSA DE TRABAJO</a></li>
+                                <li>CONTACTO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-3">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><strong>contáctanos</strong></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p>Av. Ignacio Altamirano No. 590. plaza Downtown Local B5 y B6. Zona Central, La Paz, BCS</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <br><br>
     </footer>
 </div>
 </body>

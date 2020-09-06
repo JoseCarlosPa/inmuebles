@@ -104,8 +104,8 @@
                         <div class="form-group">
                             <label for="venta_renta">Tipo</label>
                             <select name="venta_renta">
-                                <option value="venta" selected>Venta</option>
-                                <option value="renta">Renta</option>
+                                <option value="Venta" selected>Venta</option>
+                                <option value="Renta">Renta</option>
                             </select>
                         </div>
                         <div class="form-group">
