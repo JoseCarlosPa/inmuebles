@@ -1,8 +1,21 @@
 
-.container{
-
-
+@font-face {
+    font-family: AstoriaMedium;
+    font-style: normal;
+    font-weight: normal;
+    src: url("AstoriaRoman.ttf");
 }
+@font-face {
+    font-family: AstoriaMedium;
+    font-style: normal;
+    font-weight: bold;
+    src: url("AstoriaMedium.ttf");
+}
+
+*{
+    font-family: AstoriaMedium;
+}
+
 
 .img-logo{
     margin: 5px;
