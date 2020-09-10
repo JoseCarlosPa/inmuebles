@@ -45,10 +45,10 @@
                     <br><br><br>
                     <div class="row">
                         <div class="col-sm-12">
+                            <h3 style="color: white">Precio:</h3>
                             <h3 style="color: white">{{$datos->precio}}</h3>
                         </div>
                     </div>
-                    <br>
                     <div class="row">
                         <div class="col-sm-12">
                             <h3 style="color: white">{{$datos->venta_renta}}</h3>
@@ -62,35 +62,96 @@
     <br>
     <div class="container">
         <div class="row">
+            <div class="col-sm-12 text-left">
+                <a href="{{$datos->google_maps}}" target="_blank">
+                <button style="border-radius: 5px;background: #2C2925;color: white">Mapa</button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-9">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div style="display: none">{{$contador = 0}}</div>
-                        @foreach($albumes as $album)
-                            @if($contador == 0)
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div style="display: none">{{$contador = 0}}</div>
+                                @foreach($albumes as $album)
+                                    @if($contador == 0)
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
+                                        </div>
+                                        <div style="display: none">{{$contador = $contador + 1}}</div>
+                                    @endif
+                                    <div class="carousel-item ">
+                                        <img class="d-block w-100" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
+                                    </div>
+                                @endforeach
+
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            @foreach($albumes as $album)
+                                <div class="col-sm-3">
+                                    <img data-enlargable style="cursor: zoom-in" width="100%" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
                                 </div>
-                                <div style="display: none">{{$contador = $contador + 1}}</div>
-                            @endif
-                                <div class="carousel-item ">
-                                    <img class="d-block w-100" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
-                                </div>
-                        @endforeach
+                            @endforeach
+
+                                <script>
+                                    $('img[data-enlargable]').addClass('img-enlargable').click(function () {
+                                        var src = $(this).attr('src');
+                                        var modal;
+
+                                        function removeModal() {
+                                            modal.remove();
+                                            $('body').off('keyup.modal-close');
+                                        }
+
+                                        modal = $('<div>').css({
+                                            background: 'RGBA(0,0,0) url(' + src + ') no-repeat center',
+                                            backgroundSize: 'contain',
+                                            width: '100%', height: '100%',
+                                            position: 'fixed',
+                                            zIndex: '10000',
+                                            top: '0', left: '0',
+                                            cursor: 'zoom-out'
+                                        }).click(function () {
+                                            removeModal();
+                                        }).appendTo('body');
+                                        //handling ESC
+                                        $('body').on('keyup.modal-close', function (e) {
+                                            if (e.key === 'Escape') {
+                                                removeModal();
+                                            }
+                                        });
+                                    });
+                                </script>
+                        </div>
 
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>{!! $datos->extracto !!}</p>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-sm-3 show-bg text-center">
+            <div class="col-sm-3 show-bg text-center" style="height: 35vw">
                 <div class="row">
                     <div class="col-sm-12">
                         <br>

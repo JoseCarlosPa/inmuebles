@@ -59,7 +59,7 @@
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label for="Precio">Precio</label>
-                                <input type="number" step="0.1" class="form-control" id="Precio" placeholder="Precio"
+                                <input type="text" class="form-control" id="Precio" placeholder="Precio"
                                        value="{{$inmueble->precio}}" name="precio">
                             </div>
                         </div>
@@ -94,11 +94,26 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="google_maps">Ubicacion</label>
+                                <input type="text" class="form-control" id="google_maps" placeholder="Ubicacion google maps"
+                                       value="{{$inmueble->google_maps}}" name="google_maps">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <label for="des">Descripción</label>
-                        <input type="text" class="form-control" id="des" placeholder="Descripción"
-                               value="{{$inmueble->extracto}}" name="extracto">
+                        <textarea name="extracto" rows="20">{{$inmueble->extracto}}</textarea>
+                        <script>
+                            tinymce.init({
+                                selector: 'textarea',
+                                plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                                toolbar_mode: 'floating',
+                            });
+                        </script>
 
                     </div>
                     @if(($inmueble->img)!=null)
@@ -126,7 +141,8 @@
                 </form>
                 <br><br>
 
-                    <button class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal"> + Agregar fotos</button>
+                <button class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal"> + Agregar fotos
+                </button>
 
                 <br><br>
                 <table id="example" class="display nowrap text-center" width="100%">
@@ -144,7 +160,8 @@
                         <tr>
                             <td>{{$album->id}}</td>
                             <td><img src="{{asset('uploads/'.$album->img)}}" alt="IMG" width="50%"></td>
-                            <td><form action="/delImages/{{$album->id}}"
+                            <td>
+                                <form action="/delImages/{{$album->id}}"
                                       method="post">
                                     @csrf
                                     @method('delete')
@@ -152,7 +169,8 @@
                                             onclick="confirm('{{ __("¿Estás seguro de que quieres eliminar esta imagen?") }}') ? this.parentElement.submit() : ''">
                                         {{ __('Eliminar') }}
                                     </button>
-                                </form></td>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>
@@ -162,7 +180,8 @@
     </div>
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

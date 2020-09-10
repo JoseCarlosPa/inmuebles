@@ -109,6 +109,7 @@ class InmbuebleController extends Controller
         $editIn->municipio = $request->municipio;
         $editIn->m2Terreno = $request->m2t;
         $editIn->m2Cons = $request->m2c;
+        $editIn->google_maps = $request->google_maps;
 
         $editIn->agua = $request->agua;
         $editIn->elect = $request->elect;
@@ -117,8 +118,8 @@ class InmbuebleController extends Controller
             $editIn->img = $request->img_aux;
         }else{
             $file = $request->file('img');
-            \Storage::disk('local')->put($request->img,\File::get($file));
 
+            \Storage::disk('local')->put($request->img,\File::get($file));
             //$request->file('img')->store('public');
             $editIn->img = $request->file('img')->store('');
         }

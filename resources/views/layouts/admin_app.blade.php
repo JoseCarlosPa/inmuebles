@@ -24,6 +24,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/2o0m1ify6z124tv6lnunnur1funofnm5wnw44mo2nln4r71r/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 </head>
 <body>
