@@ -15,22 +15,31 @@
         <div class="row">
             @foreach($resultados as $resultado)
                 <div class="col-sm-4">
-                    <a href="{{route('inmuebles.show',$resultado->id)}}">
-                        <div class="card" style="width: 100%;margin-top:10%; height: 22vw">
-                            <img class="card-img-top" src="{{asset('uploads/'.$resultado->img)}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
+                    <a href="{{route('inmuebles.show',$resultado->id)}}" style="text-decoration: none">
+                        <div class="card" style="width: 100%;margin-top:10%;">
+                            <div class="card-body" style="background-image: url({{asset('uploads/'.$resultado->img)}});background-size: 100%;">
+                                <div class="row" style="margin-top: 16%;font-size: 11px">
+                                    <div class="col-md-12">
+                                        <div class="row img-info" >
+                                            <div class="col-sm-12 text-left">{{$resultado->elect}}</div>
+                                        </div>
+                                        <div class="row img-info" style=" width: 6.5vw;">
+                                            <div class="col-sm-12 text-left">{{$resultado->agua}}</div>
+                                        </div>
+                                        <div class="row img-info" style=" width: 8vw;">
+                                            <div class="col-sm-12 text-left">{{$resultado->m2Terreno}}</div>
+                                        </div>
+                                        <div class="row img-info" style=" width: 9vw;">
+                                            <div class="col-sm-12 text-left">{{$resultado->m2Cons}}</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <br>
+                            <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
                             <br>
                             <div class="text-center"><button class="btn-inicio">{{$resultado->venta_renta}}</button></div>
                             <br>
-                            <div class="row bottom-inicio">
-                                <div class="col-sm-3 brd">{{$resultado->m2Terreno}}</div>
-                                <div class="col-sm-3 brd">{{$resultado->m2Cons}}</div>
-                                <div class="col-sm-3 brd">{{$resultado->agua}}</div>
-                                <div class="col-sm-3 "style="font-size: 13px">{{$resultado->elect}}</div>
-                            </div>
-
                         </div>
                     </a>
                 </div>

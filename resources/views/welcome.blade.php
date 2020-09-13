@@ -52,29 +52,26 @@
             @foreach($resultados as $resultado)
                 <div class="col-sm-4">
                     <a href="{{route('inmuebles.show',$resultado->id)}}" style="text-decoration: none">
-                        <div class="card" style="width: 100%;margin-top:10%;">
-                            <div class="card-body" style="background-image: url({{asset('uploads/'.$resultado->img)}});background-size: 100%;">
-                            <div class="row" style="margin-top: 16%;font-size: 11px">
-                                <div class="col-md-12">
-                                    <div class="row img-info" >
-                                        <div class="col-sm-12 text-left">{{$resultado->elect}}</div>
+                        <div class="card" style="width: 100%;margin-top:10%;height: 28vw ">
+
+                            <img src="{{asset('uploads/'.$resultado->img)}}" width="100%">
+                            <div class="card-body">
+                                <p style="color: #b84345">{{$resultado->nombre}}</p>
+                                <p style="color: black">{{$resultado->precio}} <button style="background: #b84345;color:white;border-radius: 5px">{{$resultado->venta_renta}}</button> </p>
+                                <hr width="100%">
+                                <div class="row" style="font-size: 12px">
+                                    <div class="col-sm-4">
+                                        <p style="color: black">{{$resultado->elect}}</p>
                                     </div>
-                                    <div class="row img-info" style=" width: 6.5vw;">
-                                        <div class="col-sm-12 text-left">{{$resultado->agua}}</div>
+                                    <div class="col-sm-4">
+                                        <p style="color: black">{{$resultado->agua}}</p>
                                     </div>
-                                    <div class="row img-info" style=" width: 8vw;">
-                                        <div class="col-sm-12 text-left">{{$resultado->m2Terreno}}</div>
-                                    </div>
-                                    <div class="row img-info" style=" width: 9vw;">
-                                        <div class="col-sm-12 text-left">{{$resultado->m2Cons}}</div>
+                                    <div class="col-sm-4">
+                                        <p style="color: black;">{{$resultado->m2Terreno}}</p>
                                     </div>
                                 </div>
                             </div>
-                            </div>
                             <br>
-                            <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
-                            <br>
-                            <div class="text-center"><button class="btn-inicio">{{$resultado->venta_renta}}</button></div>
                             <br>
                         </div>
                     </a>

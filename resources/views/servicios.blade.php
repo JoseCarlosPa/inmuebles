@@ -8,7 +8,7 @@
                 <a href="/baja-california" style="text-decoration: none; color: #BA1E22">
                     <div class="row">
                         <div class="col-sm-12">
-                            <img src="{{asset('images/servicios-bg.png')}}" alt="IMG" width="100%">
+                            <img src="{{asset('images/servicios-bg.png')}}" alt="IMG" width="100%" class="img-props">
                         </div>
                     </div>
                     <div class="row">
@@ -22,7 +22,7 @@
                 <a href="/queretaro" style="text-decoration: none; color: #BA1E22">
                     <div class="row">
                         <div class="col-sm-12">
-                            <img src="{{asset('images/servicios-qro.png')}}" alt="IMG" width="100%">
+                            <img src="{{asset('images/servicios-qro.png')}}" alt="IMG" width="100%" class="img-props">
                         </div>
                     </div>
                     <div class="row">
@@ -38,7 +38,7 @@
                 <a href="/guanajuato" style="text-decoration: none; color: #BA1E22">
                     <div class="row">
                         <div class="col-sm-12">
-                            <img src="{{asset('images/servicios-guan.png')}}" alt="IMG" width="100%">
+                            <img src="{{asset('images/servicios-guan.png')}}" alt="IMG" width="100%" class="img-props">
                         </div>
                     </div>
                     <div class="row">
@@ -53,7 +53,7 @@
                 <a href="/san-luis-potosi" style="text-decoration: none; color: #BA1E22">
                     <div class="row">
                         <div class="col-sm-12">
-                            <img src="{{asset('images/servicios-snl.png')}}" alt="IMG" width="100%">
+                            <img src="{{asset('images/servicios-snl.png')}}" alt="IMG" width="100%" class="img-props">
                         </div>
                     </div>
                     <div class="row">
