@@ -13,7 +13,32 @@
                         <h2>QUIENES SOMOS</h2>
                     </div>
                     <div class="col-sm-12">
-                        <img src="{{asset('images/scott.png')}}" alt="IMG" width="100%">
+                        <div id="que-somos" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#que-somos" data-slide-to="0" class="active"></li>
+                                <li data-target="#que-somos" data-slide-to="1"></li>
+                                <li data-target="#que-somos" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{asset('images/qui1.jpg')}}" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('images/qui2.jpg')}}" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('images/qui3.jpg')}}" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#que-somos" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#que-somos" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-sm-12">
                         <p class="text-center">
@@ -28,7 +53,32 @@
                         <h2>QUÉ HACEMOS</h2>
                     </div>
                     <div class="col-sm-12">
-                        <img src="{{asset('images/marten.png')}}" alt="images" width="100%">
+                        <div id="quienes-somos" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#quienes-somos" data-slide-to="0" class="active"></li>
+                                <li data-target="#quienes-somos" data-slide-to="1"></li>
+                                <li data-target="#quienes-somos" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="{{asset('images/scott.png')}}" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('images/scott.png')}}" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="{{asset('images/scott.png')}}" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#quienes-somos" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#quienes-somos" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                     <div class="col-sm-12">
                         <p class="text-center"><br>Comercializamos, asesoramos y acompañamos a nuestro cliente en cada
@@ -130,28 +180,28 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators2">
-                                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                <div id="drivers" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#drivers" data-slide-to="0" class="active"></li>
+                                        <li data-target="#drivers" data-slide-to="1"></li>
+                                        <li data-target="#drivers" data-slide-to="2"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="{{asset('images/driver.png')}}" alt="First slide">
+                                            <img class="d-block w-100" src="{{asset('images/quea1.jpg')}}" alt="First slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="{{asset('images/driver.png')}}" alt="Second slide">
+                                            <img class="d-block w-100" src="{{asset('images/quea2.jpg')}}" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="{{asset('images/driver.png')}}" alt="Third slide">
+                                            <img class="d-block w-100" src="{{asset('images/quea3.png')}}" alt="Third slide">
                                         </div>
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#drivers" role="button" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#drivers" role="button" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
