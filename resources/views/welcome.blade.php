@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'inicio',
+
+])
 @section('title','Insignia | Inicio ')
 @section('content')
     <div class="bg-inicio">
@@ -45,29 +48,26 @@
             </div>
         </form>
     </div>
-    <br>
-    <div class="container">
-        <br>
+    <div class="container-xlg" style="margin: 5%">
         <div class="row">
             @foreach($resultados as $resultado)
-                <div class="col-sm-4">
+                <div class="col-sm-4 ">
                     <a href="{{route('inmuebles.show',$resultado->id)}}" style="text-decoration: none">
-                        <div class="card" style="width: 100%;margin-top:10%;height: 28vw ">
+                        <div class="card mycard" style="width: 100%;margin-top:10%;height: 27vw ">
 
-                            <img src="{{asset('uploads/'.$resultado->img)}}" width="100%">
+                            <img src="{{asset('uploads/'.$resultado->img)}}" width="100%" >
                             <div class="card-body">
-                                <p style="color: #b84345">{{$resultado->nombre}}</p>
-                                <p style="color: black">{{$resultado->precio}} <button style="background: #b84345;color:white;border-radius: 5px">{{$resultado->venta_renta}}</button> </p>
-                                <hr width="100%">
+                                <p style="color: #b84345" class="tarjeta">{{$resultado->nombre}}</p>
+                                <p style="color: black;font-size: 1.5vw" class="tarjeta">{{$resultado->precio}} <button style="background: #b84345;color:white;border-radius: 5px;border: none;margin-left: 10px;">{{$resultado->venta_renta}}</button> </p>
                                 <div class="row" style="font-size: 12px">
                                     <div class="col-sm-4">
-                                        <p style="color: black">{{$resultado->elect}}</p>
+                                        <p style="color: black" class="tarjeta">{{$resultado->elect}}</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <p style="color: black">{{$resultado->agua}}</p>
+                                        <p style="color: black" class="tarjeta">{{$resultado->agua}}</p>
                                     </div>
                                     <div class="col-sm-4">
-                                        <p style="color: black;">{{$resultado->m2Terreno}}</p>
+                                        <p style="color: black;" class="tarjeta">{{$resultado->m2Terreno}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -80,5 +80,6 @@
         </div>
 
     </div>
+
 
 @endsection

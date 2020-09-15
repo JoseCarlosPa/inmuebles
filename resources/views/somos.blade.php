@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'quien',
+
+])
 @section('title','Insignia | Quienes somos ')
 @section('content')
     <br><br>

@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'bolsa',
+
+])
 @section('title','Insignia | Bolsa de trabajo ')
 @section('content')
     <div class="bg-inicio">

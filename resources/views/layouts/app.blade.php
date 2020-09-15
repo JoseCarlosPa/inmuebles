@@ -38,22 +38,22 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link in" href="/">INICIO</a>
+                    <a class="nav-link in {{ $elementName == 'inicio' ? 'active' : '' }}" href="/" >INICIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/quienes-somos">QUIÉNES SOMOS</a>
+                    <a class="nav-link in {{ $elementName == 'quien' ? 'active' : '' }}" href="/quienes-somos">QUIÉNES SOMOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/propiedades-all">PROPIEDADES</a>
+                    <a class="nav-link in {{ $elementName == 'prop' ? 'active' : '' }}" href="/propiedades-all">PROPIEDADES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/bolsa-de-trabajo">BOLSA DE TRABAJO</a>
+                    <a class="nav-link in {{ $elementName == 'bolsa' ? 'active' : '' }}" href="/bolsa-de-trabajo">BOLSA DE TRABAJO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/contacto">CONTACTO</a>
+                    <a class="nav-link in {{ $elementName == 'contact' ? 'active' : '' }}" href="/contacto">CONTACTO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link in" href="/contacto">NOTICIAS</a>
+                    <a class="nav-link in {{ $elementName == 'noticias' ? 'active' : '' }}" href="/contacto">NOTICIAS</a>
                 </li>
             </ul>
         </div>
@@ -86,26 +86,33 @@
                                 <div class="col-md-4 col-sm-12"></div>
                                 <div class="col-md-4 col-sm-12">
                                     <div class="row">
-                                        <div class="col-md-3 col-sm-12" >
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 col-sm-12" >
                                             <a href="">
-                                                <img src="{{asset('images/facebook.png')}}" alt="facebok" width="25vw">
+                                                <img src="{{asset('images/facebook.svg')}}" alt="facebok" width="25vw">
                                             </a>
                                         </div>
-                                        <div class="col-md-3 col-sm-12">
+                                        <div class="col-md-2 col-sm-12" >
                                             <a href="">
-                                                <img src="{{asset('images/twitter.png')}}" alt="twitter" width="25vw">
+                                                <img src="{{asset('images/linkedin.svg')}}" alt="linkedin" width="25vw">
                                             </a>
                                         </div>
-                                        <div class="col-md-3 col-sm-12">
+                                        <div class="col-md-2 col-sm-12">
                                             <a href="">
-                                                <img src="{{asset('images/instagram.png')}}" alt="instagram" width="25vw">
+                                                <img src="{{asset('images/twitter.svg')}}" alt="twitter" width="25vw">
                                             </a>
                                         </div>
-                                        <div class="col-md-3 col-sm-12">
+                                        <div class="col-md-2 col-sm-12">
                                             <a href="">
-                                                <img src="{{asset('images/linkedin.png')}}" alt="linkedin" width="25vw">
+                                                <img src="{{asset('images/youtube.svg')}}" alt="youtube" width="25vw">
                                             </a>
                                         </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <a href="">
+                                                <img src="{{asset('images/instagram.svg')}}" alt="instagram" width="25vw">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-1"></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-sm-12"></div>
