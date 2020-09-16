@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'inicio',
+
+])
 
 @section('content')
     <br><br>

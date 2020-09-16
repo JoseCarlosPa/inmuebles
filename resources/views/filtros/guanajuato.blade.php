@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'prop',
+
+])
 @section('title','Insignia | Guanajuato ')
 @section('content')
-
-    <br><br>
-
-    <div class="container">
+    <div class="container-xlg" style="margin: 5%">
         <br>
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -14,31 +14,49 @@
 
         <div class="row">
             @foreach($resultados as $resultado)
-                <div class="col-sm-4">
+                <div class="col-sm-4 ">
                     <a href="{{route('inmuebles.show',$resultado->id)}}" style="text-decoration: none">
-                        <div class="card" style="width: 100%;margin-top:10%;">
-                            <div class="card-body" style="background-image: url({{asset('uploads/'.$resultado->img)}});background-size: 100%;">
-                                <div class="row" style="margin-top: 16%;font-size: 11px">
-                                    <div class="col-md-12">
-                                        <div class="row img-info" >
-                                            <div class="col-sm-12 text-left">{{$resultado->elect}}</div>
-                                        </div>
-                                        <div class="row img-info" style=" width: 6.5vw;">
-                                            <div class="col-sm-12 text-left">{{$resultado->agua}}</div>
-                                        </div>
-                                        <div class="row img-info" style=" width: 8vw;">
-                                            <div class="col-sm-12 text-left">{{$resultado->m2Terreno}}</div>
-                                        </div>
-                                        <div class="row img-info" style=" width: 9vw;">
-                                            <div class="col-sm-12 text-left">{{$resultado->m2Cons}}</div>
-                                        </div>
+                        <div class="card mycard" style="width: 100%;margin-top:10%;height: 31vw ">
+                            @if(($resultado->img)== NULL )
+                                <img src="{{asset('images/image-base.jpg')}}" width="100%">
+                            @else
+                                <img src="{{asset('images/'.$resultado->img)}}" width="100%">
+                            @endif
+
+                            <div class="card-body">
+                                <p class="tarjeta nombre-tarjeta">{{$resultado->nombre}}</p>
+                                <p class="tarjeta precio">{{$resultado->precio}}
+                                    <button class="button-venta">{{$resultado->venta_renta}}</button>
+                                </p>
+                                <hr width="100%">
+                                <div class="row" style="font-size: 12px">
+                                    <div class="col-sm-3">
+                                        <p style="color: black" class="tarjeta"><img src="{{asset('images/area.svg')}}"
+                                                                                     width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->m2Terreno}}</l>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p style="color: black" class="tarjeta"><img
+                                                src="{{asset('images/under-construction.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->m2Cons}}</l>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p style="color: black;" class="tarjeta"><img
+                                                src="{{asset('images/water.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->agua}}</l>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p style="color: black;" class="tarjeta"><img
+                                                src="{{asset('images/thunder.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->elect}}</l>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <br>
-                            <h5 class="card-title text-center" style="font-size: 1.6vw">{{$resultado->nombre}}</h5>
-                            <br>
-                            <div class="text-center"><button class="btn-inicio">{{$resultado->venta_renta}}</button></div>
                             <br>
                         </div>
                     </a>

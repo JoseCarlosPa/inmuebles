@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="row show-bg" style="border-radius: 4px">
+                <div class="row show-bg" style="border-radius: 4px;background: #BA1E22">
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-sm-12">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="row show-bg" style="border-radius: 4px">
+                <div class="row show-bg" style="border-radius: 4px;background: #BA1E22">
                     <div class="col-sm-12">
                         <div class="row">
                             <div class="col-sm-12">

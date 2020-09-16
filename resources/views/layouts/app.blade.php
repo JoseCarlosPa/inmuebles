@@ -169,12 +169,12 @@
                                 BCS</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row text-right">
                         <div class="col-md-2">
                             <img src="{{asset('images/log_compra.png')}}" alt="img" width="50vw">
                         </div>
                         <div class="col-md-2">
-                            <img src="{{asset('images/log_canc.png')}}" alt="img" width="50vw">
+                            <img src="{{asset('images/log_canc.png')}}" alt="img" width="40vw">
                         </div>
                         <div class="col-md-2">
                             <img src="{{asset('images/log_ampi.png')}}" alt="img" width="50vw">

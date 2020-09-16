@@ -113,6 +113,7 @@ class InmbuebleController extends Controller
 
         $editIn->agua = $request->agua;
         $editIn->elect = $request->elect;
+        $editIn->link3d = $request->link3d;
 
         if(($request->img)== null){
             $editIn->img = $request->img_aux;
@@ -122,6 +123,16 @@ class InmbuebleController extends Controller
             \Storage::disk('local')->put($request->img,\File::get($file));
             //$request->file('img')->store('public');
             $editIn->img = $request->file('img')->store('');
+        }
+
+        if(($request->portada)== null){
+            $editIn->portada = $request->portada_aux;
+        }else{
+            $file = $request->file('portada');
+
+            \Storage::disk('local')->put($request->portada,\File::get($file));
+            //$request->file('img')->store('public');
+            $editIn->portada = $request->file('portada')->store('');
         }
 
         if(($request->pdf)==null){

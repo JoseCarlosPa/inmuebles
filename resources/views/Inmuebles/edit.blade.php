@@ -103,6 +103,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="link3d">Link Recorrido 3D</label>
+                                <input type="text" class="form-control" id="link3d" placeholder="Link de recorrido 3D"
+                                       value="{{$inmueble->link3d}}" name="link3d">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <label for="des">Descripción</label>
@@ -130,6 +139,18 @@
                         <h4>PDF actual:</h4>
                         <a href="{{asset('uploads/'.$inmueble->pdf)}}" target="_blank">PDF Actual </a>
                     @endif
+
+
+                    @if(($inmueble->portada)!=null)
+                        <h4>Imagen de Banner (vista detallada) actual</h4>
+                        <img src="{{asset('uploads/'.$inmueble->portada)}}" alt="img" width="300vw">
+                    @endif
+
+                    <div class="form-group" style="margin-top: 5%">
+                        <label for="portada">Imagen Banner (vista detallada)</label>
+                        <input type="file" name="portada">
+                    </div>
+
                     <div class="form-group" style="margin-top: 5%">
                         <label for="pdf">PDF</label>
                         <input type="file" name="pdf">
@@ -137,6 +158,7 @@
 
                     <input type="hidden" name="img_aux" value="{{$inmueble->img}}">
                     <input type="hidden" name="pdf_aux" value="{{$inmueble->pdf}}">
+                    <input type="hidden" name="portada_aux" value="{{$inmueble->portada}}">
                     <button type="submit" class="btn btn-primary">Guardar</button>
                 </form>
                 <br><br>

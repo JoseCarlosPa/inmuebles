@@ -32,9 +32,11 @@ class CreateInmbueblesTable extends Migration
             $table->string('elect')->nullable();
 
             $table->string('portada')->nullable();
+            $table->string('banner')->nullable();
             $table->string('img')->nullable();
             $table->string('pdf')->nullable();
             $table->string('link')->nullable();
+            $table->string('link3d')->nullable();
             $table->timestamps();
 
             $table->foreign('id_propiedad')->references('id')->on('propiedads');

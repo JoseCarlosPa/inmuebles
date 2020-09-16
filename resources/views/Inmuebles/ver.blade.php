@@ -1,7 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.app',[
+    'elementName' => 'prop',
+
+])
 @section('title','Insignia |'.$datos->nombre)
 @section('content')
-    <div class="show-bg">
+    <div class="'show-bg" @if(($datos->portada)== NULL) style="background: #BB1E23" @else style="background-image: url({{asset(asset('uploads/'.$datos->portada))}});background-size: 100%" @endif>
         <div class="mycontainer">
             <div class="row ">
                 <div class="col-sm-8">
@@ -59,12 +62,14 @@
 
         </div>
     </div>
-    <br>
-    <div class="container">
+    <div class="container-xlg" style="margin: 5%">
         <div class="row">
             <div class="col-sm-12 text-left">
                 <a href="{{$datos->google_maps}}" target="_blank">
-                <button style="border-radius: 5px;background: #2C2925;color: white">Mapa</button>
+                <button class="button-mapa-3d">Mapa</button>
+                </a>
+                <a href="{{$datos->link3d}}" target="_blank">
+                    <button class="button-mapa-3d">3D</button>
                 </a>
             </div>
         </div>
@@ -105,53 +110,17 @@
                         <div class="row">
                             @foreach($albumes as $album)
                                 <div class="col-sm-3">
-                                    <img data-enlargable style="cursor: zoom-in" width="100%" src="{{asset(asset('uploads/'.$album->img))}}" alt="First slide">
+
+                                    <a href="{{asset(asset('uploads/'.$album->img))}}" target="_blank"> <img width="100%" src="{{asset(asset('uploads/'.$album->img))}}" alt="img"></a>
                                 </div>
                             @endforeach
-
-                                <script>
-                                    $('img[data-enlargable]').addClass('img-enlargable').click(function () {
-                                        var src = $(this).attr('src');
-                                        var modal;
-
-                                        function removeModal() {
-                                            modal.remove();
-                                            $('body').off('keyup.modal-close');
-                                        }
-
-                                        modal = $('<div>').css({
-                                            background: 'RGBA(0,0,0) url(' + src + ') no-repeat center',
-                                            backgroundSize: 'contain',
-                                            width: '100%', height: '100%',
-                                            position: 'fixed',
-                                            zIndex: '10000',
-                                            top: '0', left: '0',
-                                            cursor: 'zoom-out'
-                                        }).click(function () {
-                                            removeModal();
-                                        }).appendTo('body');
-                                        //handling ESC
-                                        $('body').on('keyup.modal-close', function (e) {
-                                            if (e.key === 'Escape') {
-                                                removeModal();
-                                            }
-                                        });
-                                    });
-                                </script>
                         </div>
 
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p>{!! $datos->extracto !!}</p>
-                    </div>
-                </div>
-
-
             </div>
-            <div class="col-sm-3 show-bg text-center" style="height: 35vw">
+            <div class="col-sm-3 show-bg text-center dow-pdf" style="">
                 <div class="row">
                     <div class="col-sm-12">
                         <br>
@@ -163,15 +132,15 @@
                         <form action="" method="">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="Nombre" placeholder="Nombre"
-                                       name="name">
+                                       name="name" required>
                             </div>
                             <div class="form-group">
                                 <input type="email" class="form-control" id="correo" placeholder="Correo"
-                                       name="email">
+                                       name="email" required>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="phone" placeholder="Telefono"
-                                       name="phone">
+                                       name="phone" required>
                             </div>
                             <br>
                             <a href="{{asset(asset('uploads/'.$datos->pdf))}}" target="_blank">
@@ -181,6 +150,11 @@
                         </form>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>{!! $datos->extracto !!}</p>
             </div>
         </div>
     </div>

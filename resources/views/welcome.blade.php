@@ -53,21 +53,43 @@
             @foreach($resultados as $resultado)
                 <div class="col-sm-4 ">
                     <a href="{{route('inmuebles.show',$resultado->id)}}" style="text-decoration: none">
-                        <div class="card mycard" style="width: 100%;margin-top:10%;height: 27vw ">
+                        <div class="card mycard" style="width: 100%;margin-top:10%;height: 31vw ">
+                            @if(($resultado->img)== NULL )
+                                <img src="{{asset('images/image-base.jpg')}}" width="100%">
+                            @else
+                                <img src="{{asset('images/'.$resultado->img)}}" width="100%">
+                            @endif
 
-                            <img src="{{asset('uploads/'.$resultado->img)}}" width="100%" >
                             <div class="card-body">
-                                <p style="color: #b84345" class="tarjeta">{{$resultado->nombre}}</p>
-                                <p style="color: black;font-size: 1.5vw" class="tarjeta">{{$resultado->precio}} <button style="background: #b84345;color:white;border-radius: 5px;border: none;margin-left: 10px;">{{$resultado->venta_renta}}</button> </p>
+                                <p class="tarjeta nombre-tarjeta">{{$resultado->nombre}}</p>
+                                <p class="tarjeta precio">{{$resultado->precio}}
+                                    <button class="button-venta">{{$resultado->venta_renta}}</button>
+                                </p>
+                                <hr width="100%">
                                 <div class="row" style="font-size: 12px">
-                                    <div class="col-sm-4">
-                                        <p style="color: black" class="tarjeta">{{$resultado->elect}}</p>
+                                    <div class="col-sm-3">
+                                        <p style="color: black" class="tarjeta"><img src="{{asset('images/area.svg')}}"
+                                                                                     width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->m2Terreno}}</l>
+                                        </p>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <p style="color: black" class="tarjeta">{{$resultado->agua}}</p>
+                                    <div class="col-sm-3">
+                                        <p style="color: black" class="tarjeta"><img
+                                                src="{{asset('images/under-construction.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->m2Cons}}</l>
+                                        </p>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <p style="color: black;" class="tarjeta">{{$resultado->m2Terreno}}</p>
+                                    <div class="col-sm-3">
+                                        <p style="color: black;" class="tarjeta"><img
+                                                src="{{asset('images/water.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->agua}}</l>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p style="color: black;" class="tarjeta"><img
+                                                src="{{asset('images/thunder.svg')}}" width="20vw">
+                                            <l class="text-tarjeta">{{$resultado->elect}}</l>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
